@@ -1,0 +1,5 @@
+const { readFileSync, writeFileSync} = require("fs")
+const denno = readFileSync("./content/first.txt", "utf8")
+const mwangi =readFileSync("./content/second.txt", "utf8")
+console.log(denno, mwangi)
+writeFileSync("./Content/irungu.txt", `today  i i wrote two comments : ${denno} and ${mwangi}`)
